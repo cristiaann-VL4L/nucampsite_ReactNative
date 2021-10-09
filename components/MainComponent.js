@@ -10,7 +10,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import { createDrawerNavigator, DrawerItems } from 'react-navigation-drawer';
 import { createAppContainer } from 'react-navigation';
 import { Icon } from 'react-native-elements';
-import { SafeAreaView } from 'react-native-safe-area-view';
+import SafeAreaView from 'react-native-safe-area-view';
 import { connect } from 'react-redux';
 import { fetchCampsites, fetchComments, fetchPromotions,
     fetchPartners } from '../redux/ActionCreators';
@@ -57,7 +57,6 @@ const HomeNavigator = createStackNavigator(
         Home: { screen: Home },
     }, 
     {
-
         defaultNavigationOptions: ({navigation}) => ({
             headerStyle: {
                 backgroundColor: '#5637DD'
@@ -81,7 +80,6 @@ const AboutNavigator = createStackNavigator(
         About: { screen: About },
     }, 
     {
-
         defaultNavigationOptions: ({navigation}) => ({
             headerStyle: {
                 backgroundColor: '#5637DD'
@@ -105,7 +103,6 @@ const ContactNavigator = createStackNavigator(
         Contact: { screen: Contact },
     }, 
     {
-
         defaultNavigationOptions: ({navigation}) => ({
             headerStyle: {
                 backgroundColor: '#5637DD'
